@@ -28,7 +28,7 @@ public class TestClass1 {
 	@BeforeClass
 	public void SetUp() {
 		baseUrl = "http://thawing-shelf-73260.herokuapp.com/";
-		System.setProperty("webdriver.gecko.driver", "/C:/Users/HP/Documents/workspace/geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/C:/chromedriver.exe");
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
